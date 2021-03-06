@@ -5,49 +5,48 @@
 <link rel="stylesheet" href="assets/LandingStyleSheet.css">
 </head>   
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Latitude</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="Resources/cities.html">City Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Comparisons</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Plots
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="visulizations/fig1page.html" target="blank">Temperature</a></li>
+              <li><a class="dropdown-item" href="visulizations/fig2page.html" target="blank">Humidity</a></li>
+              <li><a class="dropdown-item" href="visulizations/fig3page.html" target="blank">Cloudiness</a></li>
+              <li><a class="dropdown-item" href="#">Wind Speed</a></li>
+              <li><a class="dropdown-item" href="visulizations/fig4page.html" target="blank">Wind Speed</a></li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-  <div class="container">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+      <div class="container">
       <div class="row">
         <div class="col-md-12">
           <h1>What's the Weather Like Around the Globe?</h1>
         </div>
       </div>
-  
+      <div class="row">
+        <div class="col-md-4">
+          <h1>Visualizations</h1>
+        </div>
+      </div>
       <div class="row">
         <div class="col-md-4">
             <a href="visulizations/fig1page.html" target="blank"> <img class="img-responsive image-fit" src="resources/Fig1.png";> </a>
@@ -62,7 +61,7 @@
             <a href="visulizations/fig2page.html" target="blank"> <img class="img-responsive image-fit" src="resources/Fig2.png";> </a>
         </div>
         <div class="col-md-8">
-          <h3>Are you ready to see what the weather was around the globe on January 5, 2017. Select a scatter plot to learn the temperature, humidity, cloudiness, or wind speed in a variety of cities throughout the world.</h3>
+          <h3>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the Open WeatheMap API to assemble a dataset on over 500 cities.</h3>
         </div>
       </div> 
       <div class="row">
@@ -70,7 +69,7 @@
             <a href="visulizations/fig3page.html" target="blank"> <img class="img-responsive image-fit" src="resources/Fig3.png";> </a>
         </div>
         <div class="col-md-8">
-          <h3>What do you think happens to the weather closer to the equator? Select a graph and learn a little more. The DATA tab will take you to the source data.</h3>
+          <h3>After Assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included temperature, cloudiness, wind speed and humidity. The site provides the source data and visualizations created as part of the analysis, as well as explanations and description of any trends and correlations witnessed.</h3>
         </div>
       </div>
       <div class="row">

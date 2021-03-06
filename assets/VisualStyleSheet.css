@@ -4,7 +4,7 @@ h1 {
   font-size: 60px;
   color: #59a059;
   text-align: center;
-  background-color:#7cc5f3;
+  background-color:#e5eef3;
 }
 
 h2 {
@@ -12,6 +12,14 @@ h2 {
   margin-top: 15px;
   margin-bottom: 15px;
   font-size: 40px;
+  text-align: center;
+  color: #59a059;
+}
+h3 {
+  /* Put a 15-pixel margin at the top of all h2 headings. */
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 30px;
   text-align: center;
   color: #59a059;
 }
