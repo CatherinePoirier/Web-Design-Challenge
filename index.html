@@ -1,29 +1,8 @@
-<!-- //The website must consist of 7 pages total, including:
-
-//* A [landing page](#landing-page) containing:
-//  1) An explanation of the project.
-//  2) Links to each visualizations page. There should be a sidebar containing preview images of each plot, 
-//      and clicking an image should take the user to that visualization.
-// 3) Four [visualization pages](#visualization-pages), each with:
-//      a) A descriptive title and heading tag.
-//      b) The plot/visualization itself for the selected comparison.
-//      c) A paragraph describing the plot and its significance.
-//4) A ["Comparisons" page](#comparisons-page) that:
-//      a) Contains all of the visualizations on the same page so we can easily visually compare them.
-//      b) Uses a Bootstrap grid for the visualizations.
-//      c) The grid must be two visualizations across on screens medium and larger, and 1 across on extra-small and small screens.
-//5) A ["Data" page](#data-page) that:
-//      a) Displays a responsive table containing the data used in the visualizations.
-//      b) The table must be a bootstrap table component. [Hint](https://getbootstrap.com/docs/4.3/content/tables/#responsive-tables)
-//          The data must come from exporting the `.csv` file as HTML, or converting it to HTML. 
-//            Try using a tool you already know, pandas. Pandas has a nifty method approprately called `to_html` that allows you to 
-//              generate a HTML table from a pandas dataframe. See the documentation 
-//              [here](https://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.to_html.html)
-//THERE IS MORE IN THE README FILE -->
 <!DOCTYPE html>
 <http>
 <head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/LandingStyleSheet.css">
 </head>   
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -62,25 +41,53 @@
           </div>
         </div>
       </nav>
+  <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>What's the Weather Like Around the Globe?</h1>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-md-4">
+            <a href="visulizations/fig1page.html" target="blank"> <img class="img-responsive image-fit" src="resources/Fig1.png";> </a>
+        </div>
+        <div class="col-md-8">
+          <h2>Let's take a look at the weather on 1/05/17.</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+            <a href="visulizations/fig2page.html" target="blank"> <img class="img-responsive image-fit" src="resources/Fig2.png";> </a>
+        </div>
+        <div class="col-md-8">
+          <h3>Are you ready to see what the weather was around the globe on January 5, 2017. Select a scatter plot to learn the temperature, humidity, cloudiness, or wind speed in a variety of cities throughout the world.</h3>
+        </div>
+      </div> 
+      <div class="row">
+        <div class="col-md-4">
+            <a href="visulizations/fig3page.html" target="blank"> <img class="img-responsive image-fit" src="resources/Fig3.png";> </a>
+        </div>
+        <div class="col-md-8">
+          <h3>What do you think happens to the weather closer to the equator? Select a graph and learn a little more. The DATA tab will take you to the source data.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+            <a href="visulizations/fig4page.html" target="blank"> <img class="img-responsive image-fit" src="resources/Fig4.png";> </a>
+        </div>
+        <div class="col-md-8">
+          <h2>Enjoy.</h2>
+        </div>
+      </div>
+     
+    </div>
+      
+      
+      
+
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-
-
-
-      <h1>Awesome Header</h1>
-      <h2>Smaller Awesome Header</h2>
-      <h3>Even Smaller Header</h3>
-    
-      <p>Text about project here</p>
-
-      <p> there should be a sidebar of images here</p>
-      <img src="resources/Fig1.png" alt="Awesome" width="25%">
-    
-      <h3>Menu Links</h3>
-      <ul>
-        <li><a href="https://www.google.com">Google</a></li>
-        <li><a href="https://www.facebook.com">Facebook</a></li>
-        <li><a href="https://www.twitter.com">Twitter</a></li>
-      </ul>
 </body>
 </http>

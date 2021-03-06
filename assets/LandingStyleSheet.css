@@ -1,0 +1,38 @@
+
+h1 {
+    /*create a style sheet for visualization pages for consistancy */
+    margin-bottom: 15px;
+    font-size: 60px;
+    color: #59a059;
+    text-align: center;
+    background-color:#7cc5f3;
+  }
+
+  h2 {
+    /* Put a 15-pixel margin at the top of all h2 headings. */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    text-align: center;
+    color: #59a059;
+  }
+  h3 {
+    /* Put a 15-pixel margin at the top of all h2 headings. */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    text-align: center;
+    color: #59a059;
+  }
+  .backgroundimage {
+    background-image: url("backgroundimage.jfif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #7cc5f3;
+  }
+body {
+    background-color: #a6c2d3;
+    color: #59a059
+}
+.image-fit { width: 100%;
+}
